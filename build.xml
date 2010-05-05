@@ -18,9 +18,11 @@
     </fileset>
   </path>
 
+<!--
   <taskdef name="groovy"
          classname="org.codehaus.groovy.ant.Groovy"
          classpathref="project.classpath"/>
+-->
 
   <target name="copyjars"
       description="Copies the App Engine JARs to the WAR.">
