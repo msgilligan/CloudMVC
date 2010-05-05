@@ -20,6 +20,11 @@
     </div>
     
     <div id="main">
+    	<h2>About Cloud MVC</h2>
+    	<p>Cloud MVC is an experimental project that aims to make it easy to use the Groovy programming
+    	languge for server-side web MVC on "cloud" platforms like Google App Engine.  It is based on
+    	the Spring MVC framework.</p>
+    	<p>The <a href="http://github.com/msgilligan/CloudMVC">CloudMVC project</a> is on GitHub and will be licensed under ASL2</p>
 		<h2>Example Controllers</h2>
 		<ol>
 			<li><a href="helloWorld">Hello World</a> (Java)</li>
