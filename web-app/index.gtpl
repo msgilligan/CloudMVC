@@ -31,7 +31,7 @@
 			<li><a href="counter">Counter</a> (Java)</li>
 		</ol>
 		
-		<p>This page is currently normal Gaelyk .gtpl page and is not loaded via Spring MVC</p>
+		<p>This page is currently a normal Gaelyk .gtpl page and is not loaded via Spring MVC</p>
    </div>
    
    <div id="info">
