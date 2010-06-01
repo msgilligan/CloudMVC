@@ -27,8 +27,22 @@
     	<p>The <a href="http://github.com/msgilligan/CloudMVC">CloudMVC project</a> is on GitHub and will be licensed under ASL2</p>
 		<h2>Example Controllers</h2>
 		<ol>
-			<li><a href="helloWorld">Hello World</a> (Java)</li>
-			<li><a href="counter">Counter</a> (Java)</li>
+			<li>
+				<a href="helloWorld">Hello World</a> (Java/Spring Controller/JSP View)
+				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/java/com/msgilligan/cloudmvc/controller/HelloWorldController.java"view source</a>
+			</li>
+			<li>
+				<a href="helloWorldGroovy">Hello World Groovy</a> (Groovy/Spring Controller/JSP View)
+				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/groovy/com/msgilligan/cloudmvc/controller/GroovyHelloWorldController.groovy"view source</a>
+			</li>
+			<li>
+				<a href="gaelykController">Hello World Gaelyk</a> (Groovy/Spring Controller with Gaelyk/JSP View)
+				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/groovy/com/msgilligan/cloudmvc/controller/GaelykDemoController.groovy"view source</a>
+			</li>
+			<li>
+				<a href="counter">Counter</a> (Java/Spring Controller/Direct output)
+				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/java/com/msgilligan/cloudmvc/controller/CounterController.java"view source</a>
+			</li>
 		</ol>
 		
 		<p>This page is currently a normal Gaelyk .gtpl page and is not loaded via Spring MVC</p>

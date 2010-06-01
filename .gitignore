@@ -1,3 +1,6 @@
 lib
 web-app/WEB-INF/classes
 target
+logs.txt
+logs_debug.html
+logs_debug.txt

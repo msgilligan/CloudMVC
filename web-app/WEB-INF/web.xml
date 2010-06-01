@@ -74,6 +74,16 @@
 		<url-pattern>/helloWorld</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>SpringDispatcher</servlet-name>
+		<url-pattern>/helloWorldGroovy</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>SpringDispatcher</servlet-name>
+		<url-pattern>/gaelykController</url-pattern>
+	</servlet-mapping>
+
     <!-- Uncomment the following servlet mapping if you want to receive XMPP messages-->
     <!--
     <servlet-mapping>
