@@ -57,12 +57,12 @@ Projects Used
 --------------
 
 * [Spring MVC](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html)
-* [http://groovy.codehaus.org/] (Groovy)
-* [http://gaelyk.appspot.com/] (Gaelyk)
-* [http://code.google.com/appengine/docs/java/overview.html] (Google App Engine Java)
-* [http://maven.apache.org/] (Maven)
-* [http://code.google.com/p/maven-gae-plugin/] (GAE Maven Plugin)
-* [http://code.google.com/p/maven-gaelyk/] (Gaelyk Maven Archetype)
+* [Groovy](http://groovy.codehaus.org/)
+* [Gaelyk](http://gaelyk.appspot.com/)
+* [Google App Engine Java](http://code.google.com/appengine/docs/java/overview.html)
+* [Maven](http://maven.apache.org/)
+* [GAE Maven Plugin](http://code.google.com/p/maven-gae-plugin/)
+* [Gaelyk Maven Archetype](http://code.google.com/p/maven-gaelyk/)
 
 License
 -------
