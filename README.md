@@ -32,11 +32,13 @@ Completed
 To Do
 ------
 
+* Anything to speed up loading requests (aka JVM startup)
 * Run development server to allow direct editing of Groovy scripts "mvn gae:run"
 * Use categories or other method to add Gaelyk functions to Groovy controllers
 * Use Spring bean reloading to dynamically reload controllers in development mode
 * Groovy Templates (.gtpl) as Spring MVC views
 * Precompile .gtpl files before deployment
+* Can controllers be lazy loaded?
 * Library available as a jar?
 * Maven archetype?
 * Gaelyk plugin?
@@ -46,13 +48,13 @@ To Do
 Projects Used
 --------------
 
-* Spring MVC
-* Groovy
-* Gaelyk
-* Google App Engine
-* Maven
-* GAE Maven Plugin
-* Gaelyk Maven Archetype
+* [Spring MVC] (http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html)
+* [Groovy] (http://groovy.codehaus.org/)
+* [Gaelyk] (http://gaelyk.appspot.com/)
+* [Google App Engine Java] (http://code.google.com/appengine/docs/java/overview.html)
+* [Maven] (http://maven.apache.org/)
+* [GAE Maven Plugin] (http://code.google.com/p/maven-gae-plugin/)
+* [Gaelyk Maven Archetype] (http://code.google.com/p/maven-gaelyk/)
 
 License
 -------
