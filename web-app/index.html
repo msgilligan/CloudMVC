@@ -1,24 +1,10 @@
-<%
-	Boolean admin = false;
-	if (user && users.isUserAdmin() ) {
-		admin = true;
-	}
-%>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Cloud MVC Project</title>
 </head>
 
-<body>
-    <div class="login">
-		<%  if (user) {  %>
-		  <a class="button" href="<%= users.createLogoutURL(request.requestURI) %>">Logout</a>
-		<%  } else {  %>
-		  <a class="button" href="<%= users.createLoginURL(request.requestURI) %>">Login</a>
-		<%  }  %>
-    </div>
-    
+<body>    
     <div id="main">
     	<h2>About Cloud MVC</h2>
     	<p>Cloud MVC is an experimental project that aims to make it easy to use the Groovy programming
@@ -45,25 +31,16 @@
 			</li>
 		</ol>
 		
-		<p>This page is currently a normal Gaelyk .gtpl page and is not loaded via Spring MVC</p>
-   </div>
-   
-   <div id="info">
-		<%  if (user) {  %>
-		  <p>User: <%= user.nickname %></p>
-		<%  } else {  %>
-		  <p>Not logged in.</p>
-		<%  }  %>
-	   </p>
-	   	<% if (admin) { %>
-			<p>User is an admin</p>
-		<%  }  %>		
+		<h2>Standalone Gaelyk Page</h2>
+		<ol>
+			<li>
+				<a href="login.gtpl">Login</a> (Groovy/Gaelyk/.gtpl)
+				<a href="http://github.com/msgilligan/CloudMVC/blob/master/web-app/login.gtpl">view source</a>
+			</li>
+		</ol>
 
- 		<% if (localMode) { %>
-		<a target="_blank" href="http://localhost:8080/_ah/admin">Local Admin</a>
-		<%  }  %>
-   </div>
-    
+		<p>This page is (now) a static HTML page</p>
+   </div>    
 
 </body>
 </html>

@@ -32,7 +32,6 @@ Completed
 To Do
 ------
 
-* Anything to speed up loading requests (aka JVM startup)
 * Run development server to allow direct editing of Groovy scripts "mvn gae:run"
 * Use categories or other method to add Gaelyk functions to Groovy controllers
 * Use Spring bean reloading to dynamically reload controllers in development mode
@@ -43,6 +42,7 @@ To Do
 * Maven archetype?
 * Gaelyk plugin?
 * Grails plugin?
+* Anything to speed up loading requests (aka JVM startup)
 
 Take it for a test drive
 ------------------------
