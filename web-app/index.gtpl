@@ -40,7 +40,7 @@
 				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/groovy/com/msgilligan/cloudmvc/controller/GroovyHelloWorldController.groovy">view source</a>
 			</li>
 			<li>
-				<a href="gaelykController">Hello World Gaelyk</a> (Groovy/Spring Controller with Gaelyk/JSP View)
+				<a href="gaelykController">User Info Gaelyk</a> (Groovy/Spring Controller with Gaelyk/JSP View)
 				<a href="http://github.com/msgilligan/CloudMVC/blob/master/src/main/groovy/com/msgilligan/cloudmvc/controller/GaelykDemoController.groovy">view source</a>
 			</li>
 		</ol>
