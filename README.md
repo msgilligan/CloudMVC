@@ -44,17 +44,25 @@ To Do
 * Gaelyk plugin?
 * Grails plugin?
 
+Take it for a test drive
+------------------------
+
+* Make sure you have Maven 2 installed (built-in to Mac OS X dev tools)
+* Clone this project with Git
+* To run test server on port 8080:  "mvn gae:run"
+* To deploy to GAE: "mavn gae:deploy" (change app id in appengine-web.xml first)
+
 
 Projects Used
 --------------
 
-* [Spring MVC] (http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html)
-* [Groovy] (http://groovy.codehaus.org/)
-* [Gaelyk] (http://gaelyk.appspot.com/)
-* [Google App Engine Java] (http://code.google.com/appengine/docs/java/overview.html)
-* [Maven] (http://maven.apache.org/)
-* [GAE Maven Plugin] (http://code.google.com/p/maven-gae-plugin/)
-* [Gaelyk Maven Archetype] (http://code.google.com/p/maven-gaelyk/)
+* [http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html] (Spring MVC)
+* [http://groovy.codehaus.org/] (Groovy)
+* [http://gaelyk.appspot.com/] (Gaelyk)
+* [http://code.google.com/appengine/docs/java/overview.html] (Google App Engine Java)
+* [http://maven.apache.org/] (Maven)
+* [http://code.google.com/p/maven-gae-plugin/] (GAE Maven Plugin)
+* [http://code.google.com/p/maven-gaelyk/] (Gaelyk Maven Archetype)
 
 License
 -------
