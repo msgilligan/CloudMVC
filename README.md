@@ -53,3 +53,7 @@ Projects Used
 * Maven
 * GAE Maven Plugin
 * Gaelyk Maven Archetype
+
+License
+-------
+Apache Software License 2.0 goes here
