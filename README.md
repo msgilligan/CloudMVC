@@ -1,7 +1,7 @@
 CloudMVC - Groovy, Gaelyk and Spring MVC on Google App Engine
 =============================================================
 
-* Source: [http://github.com/gmosx/appengine/](http://github.com/msgilligan/CloudMVC/)
+* Source: [http://github.com/msgilligan/CloudMVC/](http://github.com/msgilligan/CloudMVC/)
 * Download: Not yet (maybe never)
 * Demo: [http://cloudmvc.appspot.com/](http://cloudmvc.appspot.com/)
 * Mailing List: None (but there has been some discussion on the Gaelyk list)
