@@ -56,7 +56,7 @@ Take it for a test drive
 Projects Used
 --------------
 
-* [http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html] (Spring MVC)
+* [Spring MVC](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html)
 * [http://groovy.codehaus.org/] (Groovy)
 * [http://gaelyk.appspot.com/] (Gaelyk)
 * [http://code.google.com/appengine/docs/java/overview.html] (Google App Engine Java)
