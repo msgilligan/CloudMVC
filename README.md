@@ -33,6 +33,7 @@ To Do
 ------
 
 * Run development server to allow direct editing of Groovy scripts "mvn gae:run"
+* Turn off logging for performance measurement
 * Use categories or other method to add Gaelyk functions to Groovy controllers
 * Use Spring bean reloading to dynamically reload controllers in development mode
 * Groovy Templates (.gtpl) as Spring MVC views
