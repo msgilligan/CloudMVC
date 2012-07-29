@@ -1,0 +1,47 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'gae'
+
+def compatibilityVersion = 1.6
+sourceCompatibility = compatibilityVersion
+targetCompatibility = compatibilityVersion
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.7.6'
+        classpath 'eu.appsatori:gradle-fatjar-plugin:0.1.1'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    def groovyVersion = '2.0.1'
+    def gaeVersion = '1.6.6'
+    groovy "org.codehaus.groovy:groovy:$groovyVersion"
+    compile "com.google.appengine:appengine-api-1.0-sdk:$gaeVersion",
+            "com.google.appengine:appengine-api-labs:$gaeVersion",
+            'org.codehaus.groovy:groovy:$groovyVersion'
+        
+    testCompile "com.google.appengine:appengine-api-stubs:$gaeVersion",
+                "com.google.appengine:appengine-testing:$gaeVersion"
+                
+    gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
+    
+    compile "javax.servlet:servlet-api:2.5",
+            "org.springframework:spring-webmvc:3.0.2.RELEASE"
+            
+}
+
+webAppDirName = file('web-app')
+
+gae {
+    downloadSdk = true
+    optimizeWar = true
+}

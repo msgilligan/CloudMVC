@@ -4,3 +4,5 @@ target
 logs.txt
 logs_debug.html
 logs_debug.txt
+build
+.gradle
