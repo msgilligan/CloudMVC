@@ -1,5 +1,4 @@
 <web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
-<!--
     <servlet>
         <servlet-name>GroovletServlet</servlet-name>
         <servlet-class>groovyx.gaelyk.GaelykServlet</servlet-class>
@@ -20,7 +19,6 @@
            <param-value>false</param-value>
        </init-param>
     </servlet>
--->
     <!-- Uncomment the following servlet definition if you want to receive XMPP messages-->
     <!--
     <servlet>
@@ -43,7 +41,6 @@
     </filter>
     -->
 
-<!--
     <servlet-mapping>
         <servlet-name>GroovletServlet</servlet-name>
         <url-pattern>*.groovy</url-pattern>
@@ -52,7 +49,6 @@
         <servlet-name>TemplateServlet</servlet-name>
         <url-pattern>*.gtpl</url-pattern>
     </servlet-mapping>
--->
 
 	<servlet>
 		<servlet-name>SpringDispatcher</servlet-name>
