@@ -1,5 +1,5 @@
 <%@ page contentType="text/html" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt" %>
 <html>
   <head>
     <title>User Info</title>
