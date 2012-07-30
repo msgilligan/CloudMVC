@@ -35,15 +35,14 @@ dependencies {
     gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
     
     compile "javax.servlet:servlet-api:2.5",
-            "org.springframework:spring-webmvc:3.0.2.RELEASE",
+            "org.springframework:spring-webmvc:3.1.2.RELEASE",
             "org.gaelyk:gaelyk:1.2"
-
-            
 }
 
 webAppDirName = file('web-app')
 
 gae {
     downloadSdk = true
-    optimizeWar = true
+//    optimizeWar = true        // optimizeWar seems to mess up Spring Schemas when it merges jars:
+// see http://thread.gmane.org/gmane.comp.java.springframework.user/10148/focus=10205
 }
