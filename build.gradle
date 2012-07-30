@@ -35,7 +35,9 @@ dependencies {
     gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
     
     compile "javax.servlet:servlet-api:2.5",
-            "org.springframework:spring-webmvc:3.0.2.RELEASE"
+            "org.springframework:spring-webmvc:3.0.2.RELEASE",
+            "org.gaelyk:gaelyk:1.2"
+
             
 }
 

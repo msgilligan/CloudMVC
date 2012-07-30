@@ -20,7 +20,7 @@ import com.google.appengine.api.memcache.MemcacheServiceFactory
 import com.google.appengine.api.urlfetch.URLFetchServiceFactory
 import com.google.appengine.api.users.UserService
 import com.google.appengine.api.users.UserServiceFactory
-import com.google.appengine.api.labs.taskqueue.QueueFactory
+import com.google.appengine.api.taskqueue.QueueFactory
 import com.google.appengine.api.xmpp.XMPPServiceFactory
 import com.google.apphosting.api.ApiProxy
 import com.google.appengine.api.blobstore.BlobstoreServiceFactory
