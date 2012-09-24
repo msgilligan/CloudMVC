@@ -22,8 +22,8 @@ repositories {
 }
 
 dependencies {
-    def groovyVersion = '2.0.1'
-    def gaeVersion = '1.6.6'
+    def groovyVersion = '2.0.2'
+    def gaeVersion = '1.7.1'
     groovy "org.codehaus.groovy:groovy:$groovyVersion"
     compile "com.google.appengine:appengine-api-1.0-sdk:$gaeVersion",
             "com.google.appengine:appengine-api-labs:$gaeVersion",
@@ -35,8 +35,14 @@ dependencies {
     gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
     
     compile "javax.servlet:servlet-api:2.5",
-            "org.springframework:spring-webmvc:3.1.2.RELEASE",
-            "org.gaelyk:gaelyk:1.2"
+    compile("org.gaelyk:gaelyk:1.2") {
+        exclude module: "servlet-api"
+//        exclude module: "groovy-all"
+    }
+            
+    compile("org.springframework:spring-webmvc:3.1.2.RELEASE") {
+    }
+
 }
 
 webAppDirName = file('web-app')
