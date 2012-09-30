@@ -32,7 +32,7 @@ Completed
 To Do
 ------
 
-* Run development server to allow direct editing of Groovy scripts "mvn gae:run"
+* Run development server to allow direct editing of Groovy scripts from gradle *Run
 * Turn off logging for performance measurement
 * Use categories or other method to add Gaelyk functions to Groovy controllers
 * Use Spring bean reloading to dynamically reload controllers in development mode
@@ -48,22 +48,21 @@ To Do
 Take it for a test drive
 ------------------------
 
-* Make sure you have Maven 2 installed (built-in to Mac OS X dev tools)
+* Make sure you have Gradle installed
 * Clone this project with Git
-* To run test server on port 8080:  "mvn gae:run"
-* To deploy to GAE: "mavn gae:deploy" (change app id in appengine-web.xml first)
+* To run test server on port 8080:  "gradle gaeRun"
+* To deploy to GAE: "gradle gaeUpload" (change app id in appengine-web.xml first)
 
 
 Projects Used
 --------------
 
-* [Spring MVC](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/mvc.html)
+* [Spring MVC](http://static.springsource.org/spring/docs/current/spring-framework-reference/html/mvc.html)
 * [Groovy](http://groovy.codehaus.org/)
+* [Gradle](http://www.gradle.org)
+* [Gradle Tomcat Plugin](https://github.com/bmuschko/gradle-tomcat-plugin)
 * [Gaelyk](http://gaelyk.appspot.com/)
 * [Google App Engine Java](http://code.google.com/appengine/docs/java/overview.html)
-* [Maven](http://maven.apache.org/)
-* [GAE Maven Plugin](http://code.google.com/p/maven-gae-plugin/)
-* [Gaelyk Maven Archetype](http://code.google.com/p/maven-gaelyk/)
 
 License
 -------
