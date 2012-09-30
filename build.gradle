@@ -1,11 +1,18 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
+apply plugin: 'project-report'
 apply plugin: 'gae'
 apply plugin: 'war'
 apply plugin: 'jetty'
+apply plugin: 'tomcat'
+
+version = 0.1
+webAppDirName = file('web-app')
 
 jettyRun.contextPath = '/'
 jettyRun.webAppSourceDirectory = file("$rootDir/web-app")
+
+tomcatRun.contextPath = '/'
 
 def compatibilityVersion = 1.6
 sourceCompatibility = compatibilityVersion
@@ -14,11 +21,16 @@ targetCompatibility = compatibilityVersion
 buildscript {
     repositories {
         mavenCentral()
+        add(new org.apache.ivy.plugins.resolver.URLResolver()) {
+            name = 'GitHub'
+            addArtifactPattern 'http://cloud.github.com/downloads/[organisation]/[module]/[module]-[revision].[ext]'
+        }
     }
 
     dependencies {
         classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.7.6'
         classpath 'eu.appsatori:gradle-fatjar-plugin:0.1.1'
+        classpath 'bmuschko:gradle-tomcat-plugin:0.9.4'
     }
 }
 
@@ -39,7 +51,7 @@ dependencies {
                 
     gaeSdk "com.google.appengine:appengine-java-sdk:$gaeVersion"
     
-    compile "javax.servlet:servlet-api:2.5",
+    providedCompile "javax.servlet:servlet-api:2.5"
     compile("org.gaelyk:gaelyk:1.2") {
         exclude module: "servlet-api"
 //        exclude module: "groovy-all"
@@ -48,9 +60,14 @@ dependencies {
     compile("org.springframework:spring-webmvc:3.1.2.RELEASE") {
     }
 
+    def tomcatVersion = '7.0.11'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+           "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}"
+    tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}") {
+        exclude group: 'org.eclipse.jdt.core.compiler', module: 'ecj'
+    }
 }
 
-webAppDirName = file('web-app')
 
 gae {
     downloadSdk = true
