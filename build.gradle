@@ -1,6 +1,11 @@
 apply plugin: 'java'
 apply plugin: 'groovy'
 apply plugin: 'gae'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+jettyRun.contextPath = '/'
+jettyRun.webAppSourceDirectory = file("$rootDir/web-app")
 
 def compatibilityVersion = 1.6
 sourceCompatibility = compatibilityVersion
