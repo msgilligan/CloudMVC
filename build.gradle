@@ -5,7 +5,9 @@ apply plugin: 'gae'
 apply plugin: 'war'
 apply plugin: 'jetty'
 apply plugin: 'tomcat'
+apply plugin: 'eclipse'
 
+group = 'org.msgilligan.cloudmvc'
 version = 0.1
 webAppDirName = file('web-app')
 
@@ -35,10 +37,12 @@ buildscript {
 }
 
 repositories {
+    maven { url 'http://oss.sonatype.org/content/repositories/snapshots/' }
     mavenCentral()
 }
 
 dependencies {
+    def springVersion = '3.1.2.RELEASE'
     def groovyVersion = '2.0.4'
     def gaeVersion = '1.7.2'
     groovy "org.codehaus.groovy:groovy:$groovyVersion"
@@ -46,6 +50,9 @@ dependencies {
             "com.google.appengine:appengine-api-labs:$gaeVersion",
             'org.codehaus.groovy:groovy:$groovyVersion'
         
+    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0-SNAPSHOT',
+                "org.springframework:spring-test:$springVersion"
+ 
     testCompile "com.google.appengine:appengine-api-stubs:$gaeVersion",
                 "com.google.appengine:appengine-testing:$gaeVersion"
                 
@@ -57,7 +64,7 @@ dependencies {
 //        exclude module: "groovy-all"
     }
             
-    compile("org.springframework:spring-webmvc:3.1.2.RELEASE") {
+    compile("org.springframework:spring-webmvc:$springVersion") {
     }
 
     def tomcatVersion = '7.0.11'
