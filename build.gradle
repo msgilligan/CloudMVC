@@ -44,15 +44,18 @@ repositories {
 
 dependencies {
     def springVersion = '3.2.0.M2'
-    def groovyVersion = '2.0.4'
+    def groovyVersion = '2.0.5'
     def gaeVersion = '1.7.2'
     groovy "org.codehaus.groovy:groovy:$groovyVersion"
     compile "com.google.appengine:appengine-api-1.0-sdk:$gaeVersion",
             "com.google.appengine:appengine-api-labs:$gaeVersion",
             'org.codehaus.groovy:groovy:$groovyVersion'
         
-    testCompile 'org.spockframework:spock-core:0.7-groovy-2.0-SNAPSHOT',
-                "org.springframework:spring-test:$springVersion"
+    testCompile ('org.spockframework:spock-core:0.7-groovy-2.0') {
+              exclude module: "groovy-all"
+    }
+  
+    testCompile "org.springframework:spring-test:$springVersion"
  
     testCompile "com.google.appengine:appengine-api-stubs:$gaeVersion",
                 "com.google.appengine:appengine-testing:$gaeVersion"
