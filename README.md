@@ -1,10 +1,31 @@
-CloudMVC - Groovy, Gaelyk and Spring MVC on Google App Engine
+CloudMVC - Groovy, Gaelyk & Spring MVC on Google App Engine
 =============================================================
 
+This is a dead project
+----------------------
+
+This project/repository was created to experiment with ideas for a lightweight Java/Groovy webapps using a subset of Spring and Spring MVC in a Cloud environment. At the time GAE was the best available low-cost option for hosting Java applications in the cloud, now there are many more options and most of them better support Java standards better than GAE.
+
+Live frameworks that implement these ideas
+------------------------------------------
+
+If you're looking for something real that you can actually develop with, I'd recommend looking at the following projects.  
+
+* [Spring Boot](http://projects.spring.io/spring-boot/) -- If Spring compatibility is important to you.
+* [Ratpack Framework](http://www.ratpack.io) -- If you want something lightweight and fast (Netty-based)
+
+Project Archive
+---------------
+
+This project will remain online for historical reasons only.
+
 * Source: [http://github.com/msgilligan/CloudMVC/](http://github.com/msgilligan/CloudMVC/)
-* Download: Not yet (maybe never)
 * Demo: [http://cloudmvc.appspot.com/](http://cloudmvc.appspot.com/)
+* Download: No downloads were ever made available.
 * Mailing List: None (but there has been some discussion on the Gaelyk list)
+ * [Project Announcement](https://groups.google.com/d/msg/gaelyk/inBKYmsxK90/e6_YAfINOskJ)
+ * [Addressing the GAE "Loading Request" problem](https://groups.google.com/d/msg/gaelyk/tGMB81B5Iog/AicmbyOvoa4J)
+
 
 Goals
 -----
